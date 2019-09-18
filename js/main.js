@@ -54,8 +54,8 @@ function getValue() {
 	document.getElementById('EventInfo').style.display = 'none';
      } else if (inputVal == identi.hamza) {
      	document.getElementById('Balance').style.display = 'inline';
-     	document.getElementById('Prenom').innerHTML = prenom.youssef;
-     	document.getElementById('Argent').innerHTML = client.youssef;
+     	document.getElementById('Prenom').innerHTML = prenom.hamza;
+     	document.getElementById('Argent').innerHTML = client.hamza;
      	document.getElementById('Identifiant').style.display = 'none';
      	document.getElementById('Connecter').style.display = 'none';
         document.getElementById('EventInfo').style.display = 'none';
