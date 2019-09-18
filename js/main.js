@@ -5,6 +5,7 @@ var client = {
 	youssef : 171,
 	hamza : 100,
 	yazid : 100,
+	yann : 200,
 	admin : 2500, 
 }, 
 identi = {
@@ -14,6 +15,7 @@ identi = {
     hamza : "hamouza15",
     yazid : "eruno76",
     admin : "admin1",
+    yann : "gigoto",
 },
 prenom = {
 	hicham : "Hicham",
@@ -22,6 +24,7 @@ prenom = {
 	hamza : "Hamza",
 	yazid : "Yazid",
 	admin : "Admin",
+	yann : "Yann",
 }
 
 
@@ -70,6 +73,13 @@ function getValue() {
      	document.getElementById('Balance').style.display = 'inline';
      	document.getElementById('Prenom').innerHTML = prenom.admin;
      	document.getElementById('Argent').innerHTML = client.admin;
+     	document.getElementById('Identifiant').style.display = 'none';
+     	document.getElementById('Connecter').style.display = 'none';
+	document.getElementById('EventInfo').style.display = 'none';
+     } else if (inputVal == identi.yann) {
+     	document.getElementById('Balance').style.display = 'inline';
+     	document.getElementById('Prenom').innerHTML = prenom.yann;
+     	document.getElementById('Argent').innerHTML = client.yann;
      	document.getElementById('Identifiant').style.display = 'none';
      	document.getElementById('Connecter').style.display = 'none';
 	document.getElementById('EventInfo').style.display = 'none';
