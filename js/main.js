@@ -37,36 +37,42 @@ function getValue() {
      	document.getElementById('Argent').innerHTML = client.hicham;
      	document.getElementById('Identifiant').style.display = 'none';
      	document.getElementById('Connecter').style.display = 'none';
+	document.getElementById('EventInfo').style.display = 'none';
      } else if (inputVal == identi.abdou) {
      	document.getElementById('Balance').style.display = 'inline';
      	document.getElementById('Prenom').innerHTML = prenom.abdou;
      	document.getElementById('Argent').innerHTML = client.abdou;
      	document.getElementById('Identifiant').style.display = 'none';
      	document.getElementById('Connecter').style.display = 'none';
+	document.getElementById('EventInfo').style.display = 'none';    
      } else if (inputVal == identi.youssef) {
      	document.getElementById('Balance').style.display = 'inline';
      	document.getElementById('Prenom').innerHTML = prenom.youssef;
      	document.getElementById('Argent').innerHTML = client.youssef;
      	document.getElementById('Identifiant').style.display = 'none';
      	document.getElementById('Connecter').style.display = 'none';
+	document.getElementById('EventInfo').style.display = 'none';
      } else if (inputVal == identi.hamza) {
      	document.getElementById('Balance').style.display = 'inline';
      	document.getElementById('Prenom').innerHTML = prenom.youssef;
      	document.getElementById('Argent').innerHTML = client.youssef;
      	document.getElementById('Identifiant').style.display = 'none';
      	document.getElementById('Connecter').style.display = 'none';
+        document.getElementById('EventInfo').style.display = 'none';
      } else if (inputVal == identi.yazid) {
      	document.getElementById('Balance').style.display = 'inline';
      	document.getElementById('Prenom').innerHTML = prenom.yazid;
      	document.getElementById('Argent').innerHTML = client.yazid;
      	document.getElementById('Identifiant').style.display = 'none';
      	document.getElementById('Connecter').style.display = 'none';
+	document.getElementById('EventInfo').style.display = 'none';
      } else if (inputVal == identi.admin) {
      	document.getElementById('Balance').style.display = 'inline';
      	document.getElementById('Prenom').innerHTML = prenom.admin;
      	document.getElementById('Argent').innerHTML = client.admin;
      	document.getElementById('Identifiant').style.display = 'none';
      	document.getElementById('Connecter').style.display = 'none';
+	document.getElementById('EventInfo').style.display = 'none';
      } else {
        alert("Erreur! Ce compte n'existe pas. Veuillez vérifier à nouveau votre Identifiant.");
      }
