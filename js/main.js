@@ -6,7 +6,7 @@ var client = {
 	hamza : 2700,
 	yazid : 650,
 	yann : 400,
-        mohamed : 100,
+        mohamed : 2600,
 	admin : 2500,
         mehdisk : 600, 
 	ahmed : 350,
