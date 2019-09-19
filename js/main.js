@@ -4,7 +4,7 @@ var client = {
 	abdou : 200,
 	youssef : 271,
 	hamza : 2700,
-	yazid : 200,
+	yazid : 650,
 	yann : 400,
         mohamed : 100,
 	admin : 2500, 
