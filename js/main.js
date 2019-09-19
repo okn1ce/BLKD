@@ -9,6 +9,8 @@ var client = {
         mohamed : 100,
 	admin : 2500,
         mehdisk : 600, 
+	ahmed : 350,
+	znata : 100,
 }, 
 identi = {
 	hicham : "h9595",
@@ -20,6 +22,8 @@ identi = {
     yann : "gigoto",
     mohamed : "mohamed5001",
     mehdisk : "mehdisk",
+    ahmed : "ahmedsalem",
+    znata : "znatamehdi",
 },
 prenom = {
 	hicham : "Hicham",
@@ -31,6 +35,8 @@ prenom = {
 	yann : "Yann",
         mohamed : "Mohamed",
         mehdisk : "Mehdi",
+	znata : "Mehdi",
+	ahmed : "Ahmed",
 }
 
 
@@ -100,6 +106,20 @@ function getValue() {
      	document.getElementById('Balance').style.display = 'inline';
      	document.getElementById('Prenom').innerHTML = prenom.mehdisk;
      	document.getElementById('Argent').innerHTML = client.mehdisk;
+     	document.getElementById('Identifiant').style.display = 'none';
+     	document.getElementById('Connecter').style.display = 'none';
+	document.getElementById('EventInfo').style.display = 'none';
+} else if (inputVal == identi.ahmed) {
+     	document.getElementById('Balance').style.display = 'inline';
+     	document.getElementById('Prenom').innerHTML = prenom.ahmed;
+     	document.getElementById('Argent').innerHTML = client.ahmed;
+     	document.getElementById('Identifiant').style.display = 'none';
+     	document.getElementById('Connecter').style.display = 'none';
+	document.getElementById('EventInfo').style.display = 'none';
+} else if (inputVal == identi.znata) {
+     	document.getElementById('Balance').style.display = 'inline';
+     	document.getElementById('Prenom').innerHTML = prenom.znata;
+     	document.getElementById('Argent').innerHTML = client.znata;
      	document.getElementById('Identifiant').style.display = 'none';
      	document.getElementById('Connecter').style.display = 'none';
 	document.getElementById('EventInfo').style.display = 'none';
