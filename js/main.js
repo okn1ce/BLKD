@@ -1,20 +1,20 @@
 // Données et variables
 var client = {
-	hicham : 3000,
-	abdou : 3000,
-	youssef : 3000,
-	hamza : 3000,
-	yazid : 3000,
-	yann : 3000,
-        mohamed : 3000,
-	admin : 3000,
-        mehdisk : 3000, 
-	ahmed : 3000,
-	znata : 3000,
+  hicham : 2000,
+  abdou : 2000,
+  youssef : 2000,
+  hamza : 2000,
+  yazid : 2000,
+  yann : 2000,
+        mohamed : 2000,
+  admin : 2000,
+        mehdisk : 2000, 
+  ahmed : 2000,
+  znata : 2000,
 }, 
 identi = {
-	hicham : "h9595",
-	abdou : "a777",
+  hicham : "h9595",
+  abdou : "a777",
     youssef : "y590",
     hamza : "hamouza15",
     yazid : "eruno76",
@@ -26,108 +26,127 @@ identi = {
     znata : "znatamehdi",
 },
 prenom = {
-	hicham : "Hicham",
-	abdou : "Abdou",
-	youssef : "Youssef",
-	hamza : "Hamza",
-	yazid : "Yazid",
-	admin : "Admin",
-	yann : "Yann",
+  hicham : "Hicham",
+  abdou : "Abdou",
+  youssef : "Youssef",
+  hamza : "Hamza",
+  yazid : "Yazid",
+  admin : "Admin",
+  yann : "Yann",
         mohamed : "Mohamed",
         mehdisk : "Mehdi",
-	znata : "Mehdi",
-	ahmed : "Ahmed",
-}
+  znata : "Mehdi",
+  ahmed : "Ahmed",
+},
+tips = [
+    'Fun fact : Plus de 22000LKD sont actuellement en circulation.',
+    'Fun fact : Vous pouvez facilement tripler votre solde en jouant au BlackJack.',
+    'Fun fact : En seulement 2j, BankLKD a réussi à réunir plus de 16 clients!',
+    'Fun fact : Hamza fut le plus riche pendant un long moment.',
+    'Fun fact : 1000LKD = ~ 2MAD. La valeur évolue avec le temps!',
+    'Fun fact : A la base, LKD était censé être un Monopoly en papier pour ne plus se faire chier en cours d"Arabe.',
+    'Fun fact : Très bientôt, vous pourrez transférer vos LKD à une autre personne, depuis votre smartphone!',
+    'Fun fact : LKD vient de latin LX Kilos Defonss qui signifie je suis gros.',
+    'Fun fact : Cristiano Ronaldo fut le premier à investir des millions sur la banque LKD.',
+    'Fun fact : Khalid & Ismail sont les créateurs de ce nouveau concept révolutionnaire.',
+]
+
 
 
 // Fonction pour se connecter
 function getValue() {
      //Recupere l'identifiant
      var inputVal = document.getElementById('Identifiant').value;
+     var randomNumber = Math.floor(Math.random() * (tips.length));
+     document.getElementById("Tips").innerHTML = tips[randomNumber];
+     document.getElementById("Tips").style.display = 'block';
  
      //Vérifie à qui il appartient
      if (inputVal == identi.hicham) {
-     	document.getElementById('Balance').style.display = 'inline';
-     	document.getElementById('Prenom').innerHTML = prenom.hicham;
-     	document.getElementById('Argent').innerHTML = client.hicham;
-     	document.getElementById('Identifiant').style.display = 'none';
-     	document.getElementById('Connecter').style.display = 'none';
-	document.getElementById('EventInfo').style.display = 'none';
+      document.getElementById('Balance').style.display = 'inline';
+      document.getElementById('Prenom').innerHTML = prenom.hicham;
+      document.getElementById('Argent').innerHTML = client.hicham;
+      document.getElementById('Identifiant').style.display = 'none';
+      document.getElementById('Connecter').style.display = 'none';
+  document.getElementById('EventInfo').style.display = 'none';
      } else if (inputVal == identi.abdou) {
-     	document.getElementById('Balance').style.display = 'inline';
-     	document.getElementById('Prenom').innerHTML = prenom.abdou;
-     	document.getElementById('Argent').innerHTML = client.abdou;
-     	document.getElementById('Identifiant').style.display = 'none';
-     	document.getElementById('Connecter').style.display = 'none';
-	document.getElementById('EventInfo').style.display = 'none';    
+      document.getElementById('Balance').style.display = 'inline';
+      document.getElementById('Prenom').innerHTML = prenom.abdou;
+      document.getElementById('Argent').innerHTML = client.abdou;
+      document.getElementById('Identifiant').style.display = 'none';
+      document.getElementById('Connecter').style.display = 'none';
+  document.getElementById('EventInfo').style.display = 'none';    
      } else if (inputVal == identi.youssef) {
-     	document.getElementById('Balance').style.display = 'inline';
-     	document.getElementById('Prenom').innerHTML = prenom.youssef;
-     	document.getElementById('Argent').innerHTML = client.youssef;
-     	document.getElementById('Identifiant').style.display = 'none';
-     	document.getElementById('Connecter').style.display = 'none';
-	document.getElementById('EventInfo').style.display = 'none';
+      document.getElementById('Balance').style.display = 'inline';
+      document.getElementById('Prenom').innerHTML = prenom.youssef;
+      document.getElementById('Argent').innerHTML = client.youssef;
+      document.getElementById('Identifiant').style.display = 'none';
+      document.getElementById('Connecter').style.display = 'none';
+  document.getElementById('EventInfo').style.display = 'none';
      } else if (inputVal == identi.hamza) {
-     	document.getElementById('Balance').style.display = 'inline';
-     	document.getElementById('Prenom').innerHTML = prenom.hamza;
-     	document.getElementById('Argent').innerHTML = client.hamza;
-     	document.getElementById('Identifiant').style.display = 'none';
-     	document.getElementById('Connecter').style.display = 'none';
+      document.getElementById('Balance').style.display = 'inline';
+      document.getElementById('Prenom').innerHTML = prenom.hamza;
+      document.getElementById('Argent').innerHTML = client.hamza;
+      document.getElementById('Identifiant').style.display = 'none';
+      document.getElementById('Connecter').style.display = 'none';
         document.getElementById('EventInfo').style.display = 'none';
      } else if (inputVal == identi.yazid) {
-     	document.getElementById('Balance').style.display = 'inline';
-     	document.getElementById('Prenom').innerHTML = prenom.yazid;
-     	document.getElementById('Argent').innerHTML = client.yazid;
-     	document.getElementById('Identifiant').style.display = 'none';
-     	document.getElementById('Connecter').style.display = 'none';
-	document.getElementById('EventInfo').style.display = 'none';
+      document.getElementById('Balance').style.display = 'inline';
+      document.getElementById('Prenom').innerHTML = prenom.yazid;
+      document.getElementById('Argent').innerHTML = client.yazid;
+      document.getElementById('Identifiant').style.display = 'none';
+      document.getElementById('Connecter').style.display = 'none';
+  document.getElementById('EventInfo').style.display = 'none';
      } else if (inputVal == identi.admin) {
-     	document.getElementById('Balance').style.display = 'inline';
-     	document.getElementById('Prenom').innerHTML = prenom.admin;
-     	document.getElementById('Argent').innerHTML = client.admin;
-     	document.getElementById('Identifiant').style.display = 'none';
-     	document.getElementById('Connecter').style.display = 'none';
-	document.getElementById('EventInfo').style.display = 'none';
+      document.getElementById('Balance').style.display = 'inline';
+      document.getElementById('Prenom').innerHTML = prenom.admin;
+      document.getElementById('Argent').innerHTML = client.admin;
+      document.getElementById('Identifiant').style.display = 'none';
+      document.getElementById('Connecter').style.display = 'none';
+  document.getElementById('EventInfo').style.display = 'none';
      } else if (inputVal == identi.yann) {
-     	document.getElementById('Balance').style.display = 'inline';
-     	document.getElementById('Prenom').innerHTML = prenom.yann;
-     	document.getElementById('Argent').innerHTML = client.yann;
-     	document.getElementById('Identifiant').style.display = 'none';
-     	document.getElementById('Connecter').style.display = 'none';
-	document.getElementById('EventInfo').style.display = 'none';
+      document.getElementById('Balance').style.display = 'inline';
+      document.getElementById('Prenom').innerHTML = prenom.yann;
+      document.getElementById('Argent').innerHTML = client.yann;
+      document.getElementById('Identifiant').style.display = 'none';
+      document.getElementById('Connecter').style.display = 'none';
+  document.getElementById('EventInfo').style.display = 'none';
      } else if (inputVal == identi.mohamed) {
-     	document.getElementById('Balance').style.display = 'inline';
-     	document.getElementById('Prenom').innerHTML = prenom.mohamed;
-     	document.getElementById('Argent').innerHTML = client.mohamed;
-     	document.getElementById('Identifiant').style.display = 'none';
-     	document.getElementById('Connecter').style.display = 'none';
-	document.getElementById('EventInfo').style.display = 'none';
+      document.getElementById('Balance').style.display = 'inline';
+      document.getElementById('Prenom').innerHTML = prenom.mohamed;
+      document.getElementById('Argent').innerHTML = client.mohamed;
+      document.getElementById('Identifiant').style.display = 'none';
+      document.getElementById('Connecter').style.display = 'none';
+  document.getElementById('EventInfo').style.display = 'none';
           } else if (inputVal == identi.mehdisk) {
-     	document.getElementById('Balance').style.display = 'inline';
-     	document.getElementById('Prenom').innerHTML = prenom.mehdisk;
-     	document.getElementById('Argent').innerHTML = client.mehdisk;
-     	document.getElementById('Identifiant').style.display = 'none';
-     	document.getElementById('Connecter').style.display = 'none';
-	document.getElementById('EventInfo').style.display = 'none';
+      document.getElementById('Balance').style.display = 'inline';
+      document.getElementById('Prenom').innerHTML = prenom.mehdisk;
+      document.getElementById('Argent').innerHTML = client.mehdisk;
+      document.getElementById('Identifiant').style.display = 'none';
+      document.getElementById('Connecter').style.display = 'none';
+  document.getElementById('EventInfo').style.display = 'none';
 } else if (inputVal == identi.ahmed) {
-     	document.getElementById('Balance').style.display = 'inline';
-     	document.getElementById('Prenom').innerHTML = prenom.ahmed;
-     	document.getElementById('Argent').innerHTML = client.ahmed;
-     	document.getElementById('Identifiant').style.display = 'none';
-     	document.getElementById('Connecter').style.display = 'none';
-	document.getElementById('EventInfo').style.display = 'none';
+      document.getElementById('Balance').style.display = 'inline';
+      document.getElementById('Prenom').innerHTML = prenom.ahmed;
+      document.getElementById('Argent').innerHTML = client.ahmed;
+      document.getElementById('Identifiant').style.display = 'none';
+      document.getElementById('Connecter').style.display = 'none';
+  document.getElementById('EventInfo').style.display = 'none';
 } else if (inputVal == identi.znata) {
-     	document.getElementById('Balance').style.display = 'inline';
-     	document.getElementById('Prenom').innerHTML = prenom.znata;
-     	document.getElementById('Argent').innerHTML = client.znata;
-     	document.getElementById('Identifiant').style.display = 'none';
-     	document.getElementById('Connecter').style.display = 'none';
-	document.getElementById('EventInfo').style.display = 'none';
+      document.getElementById('Balance').style.display = 'inline';
+      document.getElementById('Prenom').innerHTML = prenom.znata;
+      document.getElementById('Argent').innerHTML = client.znata;
+      document.getElementById('Identifiant').style.display = 'none';
+      document.getElementById('Connecter').style.display = 'none';
+  document.getElementById('EventInfo').style.display = 'none';
 } else {
        alert("Erreur! Ce compte n'existe pas. Veuillez vérifier à nouveau votre Identifiant.");
      }
 
 }
+
+// Fun facts
+
 // Animation du titre
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
