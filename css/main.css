@@ -8,6 +8,7 @@ h1 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 40px;
 	color: #ff793f;
+  cursor: pointer;
 }
 
 p {
@@ -55,4 +56,12 @@ button {
   cursor: pointer;
   -webkit-box-shadow: inset 0 -2px #dadedf;
   box-shadow: inset 0 -2px #dadedf;
+}
+
+footer {
+  position:fixed;
+   left:0px;
+   bottom:2px;
+   height:30px;
+   width:100%;
 }
