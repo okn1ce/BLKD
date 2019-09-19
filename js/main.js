@@ -7,7 +7,8 @@ var client = {
 	yazid : 650,
 	yann : 400,
         mohamed : 100,
-	admin : 2500, 
+	admin : 2500,
+        mehdisk : 600, 
 }, 
 identi = {
 	hicham : "h9595",
@@ -17,7 +18,8 @@ identi = {
     yazid : "eruno76",
     admin : "admin1",
     yann : "gigoto",
-    mohamed : "mohamed5001"
+    mohamed : "mohamed5001",
+    mehdisk : "mehdisk",
 },
 prenom = {
 	hicham : "Hicham",
@@ -28,6 +30,7 @@ prenom = {
 	admin : "Admin",
 	yann : "Yann",
         mohamed : "Mohamed",
+        mehdisk : "Mehdi",
 }
 
 
@@ -93,7 +96,14 @@ function getValue() {
      	document.getElementById('Identifiant').style.display = 'none';
      	document.getElementById('Connecter').style.display = 'none';
 	document.getElementById('EventInfo').style.display = 'none';
-          } else {
+          } else if (inputVal == identi.mehdisk) {
+     	document.getElementById('Balance').style.display = 'inline';
+     	document.getElementById('Prenom').innerHTML = prenom.mehdisk;
+     	document.getElementById('Argent').innerHTML = client.mehdisk;
+     	document.getElementById('Identifiant').style.display = 'none';
+     	document.getElementById('Connecter').style.display = 'none';
+	document.getElementById('EventInfo').style.display = 'none';
+} else {
        alert("Erreur! Ce compte n'existe pas. Veuillez vérifier à nouveau votre Identifiant.");
      }
 
