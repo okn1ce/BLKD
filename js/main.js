@@ -1,11 +1,11 @@
 // Données et variables
 var client = {
-	hicham : 300,
-	abdou : 100,
-	youssef : 171,
-	hamza : 100,
-	yazid : 100,
-	yann : 200,
+	hicham : 400,
+	abdou : 200,
+	youssef : 271,
+	hamza : 200,
+	yazid : 200,
+	yann : 400,
 	admin : 2500, 
 }, 
 identi = {
