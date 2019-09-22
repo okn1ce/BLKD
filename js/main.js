@@ -9,7 +9,7 @@ var client = {
         mohamed : 2000,
   admin : 2000,
         mehdisk : 2000, 
-  ahmed : 2000,
+  ahmed : 2300,
   znata : 2000,
 }, 
 identi = {
