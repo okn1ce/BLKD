@@ -3,7 +3,7 @@ var client = {
   hicham : 1200,
   abdou : 3500,
   youssef : 1200,
-  hamza : 3200,
+  hamza : 0,
   yazid : 2000,
   yann : 2000,
         mohamed : 2000,
