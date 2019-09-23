@@ -5,6 +5,7 @@ var client = {
   youssef : 1200,
   hamza : 3100,
   yazid : 2000,
+  khalid : 800,
   yann : 1300,
         mohamed : 2300,
   admin : 2000,
