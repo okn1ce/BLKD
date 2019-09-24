@@ -1,13 +1,13 @@
 // Données et variables
 var client = {
-  hicham : 1200,
+  hicham : 1500,
   abdou : 3500,
-  youssef : 1200,
-  hamza : 3100,
+  youssef : 1400,
+  hamza : 2900,
   yazid : 2000,
   khalid : 800,
   yann : 1300,
-        mohamed : 2300,
+        mohamed : 1000,
   admin : 2000,
         mehdisk : 2000, 
   ahmed : 2300,
