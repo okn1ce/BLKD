@@ -8,7 +8,7 @@ var client = {
   khalid : 800,
   yann : 1300,
         mohamed : 1000,
-  admin : 2000,
+  admin : 500000200,
         mehdisk : 2000, 
   ahmed : 2300,
   znata : 2000,
